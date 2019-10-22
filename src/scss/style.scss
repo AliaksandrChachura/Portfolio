@@ -96,66 +96,65 @@ p {
 }
 
 .carousel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-  
-  
+  width: auto;
+  height: 400px;
+  border: black solid;
+  @include flex ($align: center, $justify: center);
+}
+
   .items-container {
     position: relative;
-    width: 100%;
+    width: 80%;
+    height: 100%;
     overflow: hidden;
+    //border: red solid;
   }
-  
-  .item {
-    display: none;
-    position: relative;
-    animation: 0.5s ease-in-out;
-    margin: 0 auto;
-  }
-  
-  .active,
-  .next {
-    display: block;
-  }
-  
-  .next {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  
-  .description {
-    margin: 30px 20%;
-    font-size: 32px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .project-name {
-    padding: 10px;
-  }
-  
+    .theyalow {
+      background-image: url(./images/theyalow.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .repair {
+      background-image: url(./images/repair.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .item {
+      display: none;
+      position: relative;
+      animation: 0.5s ease-in-out;
+      margin: 0;
+      padding: 0;
+      
+      .description {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 32px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .active,
+    .next {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .next {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
   .control {
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
-    width: 15%;
+    width: 10%;
     cursor: pointer;
-  }
-  
-  .control.left {
-    left: 0;
-    right: auto;
-  }
-  
-  .control.right {
-    right: 0;
-    left: auto;
+    
   }
   
   .arrow {
@@ -167,6 +166,65 @@ p {
   }
   
   .arrow.right {
-    right: 50%;
+    right: 20%;
+  }
+  .arrow.left {
+    right: 20%;
+  }
+  
+  .control.left {
+    left: 0;
+    right: auto;
+  }
+  
+  .control.right {
+    right: 0;
+    left: auto;
+  }
+  @media (max-width: 640px) {
+    .control > .arrow {
+      display: none;
+    }
+    .items-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
   }
 }
