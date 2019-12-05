@@ -1,0 +1,1003 @@
+@font-face {
+
+ font-family: 'LSANSI';
+ src: url('./fonts/LSANSI.eot');
+ src: url('./fonts/LSANSI.eot?iefix') format('eot'),
+  url('./fonts/LSANSI.TTF') format('truetype'),
+  url('./fonts/LSANSI.svg#webfont') format('svg');
+
+ font-weight: normal;
+ font-style: italic;
+
+}
+
+@font-face {
+
+ font-family: 'SegoeWP';
+ src: url('./fonts/SegoeWP.eot');
+ src: url('./fonts/SegoeWP.eot?iefix') format('eot'),
+  /* url('./fonts/LSANSI.woff') format('woff'), */
+  url('./fonts/SegoeWP.TTF') format('truetype'),
+  url('./fonts/SegoeWP.svg#webfont') format('svg');
+
+ font-weight: normal;
+ font-style: normal;
+
+}
+
+@font-face {
+
+ font-family: 'SegoeUI';
+ src: url('./fonts/SegoeUI.eot');
+ src: url('./fonts/SegoeUI.eot?iefix') format('eot'),
+  /* url('./fonts/LSANSI.woff') format('woff'), */
+  url('./fonts/SegoeUI.TTF') format('truetype'),
+  url('./fonts/SegoeUI.svg#webfont') format('svg');
+
+ font-weight: normal;
+ font-style: normal;
+
+}
+
+body {
+    margin: 0px auto;
+    position: absolute;
+    overflow: auto;
+    margin-right: 0px;
+    width: 1300px;
+}
+.wrapper{
+    margin: auto;
+    height: 555px;
+    background-image: url("assets/images/header.png");
+    background-size: cover;
+    overflow: hidden;   
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 157px;
+    
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 41px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    margin: 60px  0 0 140px;
+}
+
+.wrap-logo{
+    position:relative;
+  }
+   
+  .back{
+    position: absolute;
+    top: -41px;
+    right: 3px;
+  }
+   
+  .front{
+    position: relative;
+    margin: -85px 0 -4px -2px;
+  }
+
+.logo h1 {
+    font-size: 41px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    margin: -20px 0px 0 4px;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 60px 140px 0 0;
+    box-shadow: -4px -4px 0px 0px rgba(245,197,5,0.5), -8px -8px 0px 0px rgba(245,197,5,0.27);
+    width: 450px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: "Segoe WP";
+    text-align: center;
+    width: 150px;
+    height: 41px;
+    background-image: linear-gradient(#f5c505 0%, #f5c505 100%);
+}
+
+.navbar ul li:not(:nth-child(1)) {
+border-left: 1px solid #9b7d08;
+}
+
+.navbar ul li a:hover {
+    background-image: linear-gradient(0deg, #979690 0%, #979690 100%);
+}
+.navbar ul li:first-child a:before {
+    content: url(assets/images/about1.png);
+    padding-right: 1px;
+}
+
+.navbar ul li:nth-child(2) a:before {
+    content: url(assets/images/services.png);
+}
+
+.navbar ul li:nth-child(3) a:before {
+    content: url(assets/images/contact.png);
+}
+
+.video-in-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+    
+}
+
+.left-button {
+    display: flex;
+    flex-direction: row;
+  justify-content: flex-start;
+    
+}
+
+.left-button section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 57px;
+    background-color: #f5c506;
+    margin: 130px 0px 0px -150px;
+}
+
+.right-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.right-button section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 57px;
+    background-color: #f5c506;
+    margin: 130px -149px 0px 0px;
+}
+
+.carrots-text {
+    display: flex;
+    justify-content: flex-start;
+    width: 1000px;
+    height: 325px;
+    
+}
+
+.carrots-text div video {
+    height: 100%;
+    width: 550px;
+    object-fit: fill;
+    
+}
+
+.carrots-description {
+    display: block;
+    width: 450px;
+    font-size: 63px;
+    letter-spacing: 1px;
+    color: #f5c506;
+    font-family: "Asap";
+    font-weight: 400;
+    text-align: center;
+}
+
+.carrots-description p:first-child {
+    margin: 74px -23px 0 0;
+}
+
+.carrots-description p:last-child {
+    color: #ffffff;
+    margin: 2px -71px 0 0;
+}
+
+.main{
+
+height: 1215px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/images/description.png");
+    height: 210px;
+}
+
+.description sections {
+    width: 340px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+.description sections:first-child {
+    border-left: 1px solid #5e5c5c;
+}
+
+.description sections {
+    border-right: 1px solid #5e5c5c;
+}
+
+.video-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;;
+    background-image: url("assets/images/video-2.png");
+    overflow: hidden;
+    height: 507px;
+}
+
+.lorem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 106px;
+    width: 1020px;
+    font-size: 37px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-weight: 400;
+}
+
+.video2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 230px;
+    width: 1020px;
+}
+
+.video2 div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+
+
+
+.twitter {
+    height: 230px;
+    width: 330px;
+}
+
+.about-lorem-ipsum {
+    background-image: url("assets/images/back-lorem.png");
+    width: 337px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+}
+
+.about-lorem-ipsum div {
+    position: relative;
+    margin: -20px 0px 0px 312px;
+}
+
+.about-lorem-ipsum div:hover {
+    height: 60px;
+    width: 60px;
+    background-color: #979690;
+}
+
+.monkey-video {
+    height: 230px;
+    width: 315px;
+}
+
+.monkey-video div video {
+    height: 100%;
+    width: 313px;
+    object-fit: fill; 
+}
+
+.twitter {
+    display: flex;
+    flex-direction: row;
+    background-image: url("assets/images/backtwitter.png");
+}
+
+.twitter p {
+    position: relative;
+    margin: 10px 0px 0px 284px;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+}
+
+.twitter img {
+    position: relative;
+    margin: 20px 0px 0px -227px;
+}
+
+.twitter div {
+    position: relative;
+    margin: 188px 0px 0px 288px;
+}
+
+.twitter div:hover {
+    height: 15px;
+    width: 15px;
+    background-color: #979690;
+}
+
+.date {    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90px;
+    width: 1020px;
+}
+
+.date div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 111px;
+    background-image: url("assets/images/date.png");
+}
+
+.date div p:first-child {
+    position: relative;
+    margin: 16px 0px 0px 3px;
+    font-size: 51px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+
+.date div p:last-child {
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #b26529;
+    font-family: "Segoe UI";
+}
+
+.video-2 input[type=range] {
+    position: relative;
+    margin: 40px -17px 0px 0px;
+    -webkit-appearance: none; 
+    width: 896px; 
+    background: transparent;
+  }
+  
+.video-2 input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+.video-2  input[type=range]:focus {
+    outline: none;
+  }
+  
+.video-2  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+.video-2 input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 197px;
+    height: 15px;
+    border-radius: 7px;
+    background: #ec9e03;
+    cursor: pointer;
+  }
+
+.video-2 input[type=range]::-webkit-slider-runnable-track {
+    width: 896px;
+    height: 15px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 7px;
+  }
+  
+.video-2 input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+  }
+
+.lorem-ipsum {
+    border: 1px solid black;
+    background-image: url("assets/images/lorem-ipsum.png");
+    height: 495px;
+}
+
+.lorem-ipsum div p {
+    width: 100%;
+    position: relative;
+    margin: 41px 344px;
+    font-size: 43px;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "PT Sans";
+    font-weight: 400;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: -36px 136px;
+    width: 116px;
+    height: 116px;
+    border-radius: 58px;
+    background-color: #f5c506;
+    z-index: 1;
+}
+
+.circle div {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+}
+
+.desktop {
+    position: relative;
+    margin: -36px 156px;
+}
+
+.pad {
+    position: relative;
+    margin: 4px -137px;
+}
+
+.mobile {
+    position: relative;
+    margin: 5px 158px;
+}
+
+.text-list {
+    position: absolute;
+    margin: -123px 768px;
+    width: 352px;
+    height: 45px;
+}
+
+.text-list ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-list ul li:left {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #f5c506;
+}
+
+.footer {
+    background-image: url("assets/images/bottom.png");
+    background-size: cover;
+    border: 1px solid black;
+    height: 65px;
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+}
+
+.small-logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 41px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    margin: 60px  0 0 140px;
+}
+
+.small-wrap-logo{
+    position:relative;
+  }
+   
+  .small-back{
+    position: absolute;
+    top: -53px;
+    right: 3px;
+  }
+   
+  .small-front{
+    position: relative;
+    margin: -85px 0 38px -2px;
+  }
+
+.small-logo div p {
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    margin: -44px 0px 0 4px;
+}
+
+@media (max-width: 640px) {
+
+    body {
+        margin: 0px auto;
+        position: absolute;
+        overflow: auto;
+        margin-right: 0px;
+        width: 640px;
+    }
+
+    .wrapper{
+        margin: auto;
+        height: 390px;
+        overflow: hidden;   
+        
+    }
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 64px;
+    
+}
+
+.logo {
+    display: flex;
+    width: 160px;
+    flex-direction: row;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    margin: 60px  0 0 140px;
+}
+
+.wrap-logo{
+    position:relative;
+  }
+   
+  .back {
+    position: absolute;
+    width: 40px;
+    height: 39px;
+    top: -48px;
+    right: 125px;
+  }
+   
+  .front {
+    width: 40px;
+    height: 39px;
+    position: relative;
+    top: -31px;
+    right: 125px;
+    margin: -85px 0 -4px -2px;
+  }
+
+.logo h1 {
+    position: relative;
+    margin: -39px 18px 0 -120px;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 1px 141px 0 6px;
+    width: 450px;
+    padding: 0px;
+    list-style-type: none;
+    box-shadow: none;
+}
+
+.navbar ul li a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: "Segoe WP";
+    text-align: center;
+    width: 150px;
+    height: 64px;
+    background-image: linear-gradient(#f5c505 0%, #f5c505 100%);
+}
+
+.navbar ul li:not(:nth-child(1)) {
+border-left: 1px solid #9b7d08;
+}
+
+.navbar ul li a:hover {
+    background-image: linear-gradient(0deg, #979690 0%, #979690 100%);
+}
+.navbar ul li:first-child a:before {
+    content: url(assets/images/about1.png);
+    padding-right: 1px;
+}
+
+.navbar ul li:nth-child(2) a:before {
+    content: url(assets/images/services.png);
+}
+
+.navbar ul li:nth-child(3) a:before {
+    content: url(assets/images/contact.png);
+}
+
+.video-in-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 330px;
+    
+}
+
+.left-button {
+    visibility: hidden;
+}
+
+.left-button section {
+    visibility: hidden;
+}
+
+.right-button {
+    visibility: hidden;
+    
+}
+
+.right-button section {
+    visibility: hidden;
+}
+
+
+.carrots-text div video {
+    position: relative;
+    margin: 0px 180px;
+    height: 325px;
+    width: 640px;
+    object-fit: fill;
+}
+
+.carrots-description {
+    visibility: hidden;
+}
+
+.main{
+
+    height: 1130px;
+    }
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/images/description.png");
+    height: 180px;
+}
+
+.description sections {
+    width: 213px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+.description sections:first-child {
+    border-left: none;
+}
+
+.description sections {
+    border-right: none;
+}
+
+.design, .customise, .free {
+    width: 68px;
+    height: 69px;
+}
+
+.video-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    background-image: none; 
+    width: 100%;
+    height: 486px;
+}
+
+.lorem {
+    display: none;
+}
+
+.video2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    width: 640px;
+    height: 490px;
+    margin: 0px 0px;
+}
+
+.video2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 640px;
+    height: 230px;
+}
+
+
+
+
+.twitter {
+    height: 246px;
+    width: 640px;
+    margin-top: 10px;
+}
+
+.about-lorem-ipsum {
+    background-image: url("assets/images/back-lorem.png");
+    width: 300px;
+    height: 230px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    line-height: 33px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    margin: 10px;
+}
+
+.about-lorem-ipsum div {
+   visibility: hidden;
+}
+
+
+.monkey-video {
+    height: 230px;
+    width: 300px;
+    margin: 10px;
+}
+
+.monkey-video div video {
+    height: 230px;
+    width: 300px;
+    object-fit: fill; 
+}
+
+.twitter {
+    display: flex;
+    flex-direction: row;
+    background-image: url("assets/images/back-twitter-mobile.png");
+}
+
+.twitter p {
+   visibility: hidden;
+}
+
+.twitter img {
+    width: 158px;
+    height: 133px;
+    position: relative;
+    margin: 66px 0px 0px -227px;
+}
+
+.twitter div {
+    visibility: hidden;
+}
+
+
+.date {    
+   visibility: hidden;
+}
+
+
+.video-2 input[type=range] {
+    visibility: hidden;
+  }
+
+.lorem-ipsum {
+    border: 1px solid black;
+    background-image: url("assets/images/lorem-ipsum-mobile.png");
+    height: 465px;
+    width: 640;
+}
+
+.lorem-ipsum div p {
+    width: 100%;
+    position: relative;
+    margin: 41px 20px;
+    font-size: 39px;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: -36px 10px;
+    width: 116px;
+    height: 116px;
+    border-radius: 58px;
+    background-color: #f5c506;
+    z-index: 1;
+}
+
+.circle div {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+}
+
+.desktop {
+    height: 256px;
+    width: 320px;
+    position: relative;
+    margin: -36px 34px;
+}
+
+.pad {
+    position: relative;
+    margin: 4px -10px;
+}
+
+.mobile {
+    position: relative;
+    margin: 0px 0px 2px 36px;
+}
+
+.text-list {
+    visibility: hidden;
+}
+
+.footer {
+    background-image: url("assets/images/bottom.png");
+    background-size: cover;
+    border: 1px solid black;
+    height: 45px;
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+}
+
+.small-logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 41px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    margin: 60px  0 0 140px;
+}
+
+.small-wrap-logo{
+    position:relative;
+  }
+   
+  .small-back{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    top: -53px;
+    right: 60px;
+  }
+   
+  .small-front{
+    position: relative;
+    width: 33px;
+    height: 33px;
+    margin: -85px 60px 59px -10px;
+  }
+
+.small-logo div p {
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    margin: -47px 1px 0 -47px;
+}
+
+
+}

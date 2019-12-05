@@ -7,10 +7,56 @@
 
 body {
     width: 1024px;
+    height: 100vh;
     margin: auto;
     border: 4px double black;
     display: block;
 }
+
+.back {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 70px;
+  font-size: 20px;
+  background-color: black;
+  color: #f1f1f1;
+  text-align: center;
+  margin-left: 75vw;
+  margin-top: 75vh;
+  border-radius: 30%;
+  cursor: pointer;
+  display: none;
+}
+
+.size {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 70px;
+  font-size: 20px;
+  background-color: black;
+  color: #f1f1f1;
+  text-align: center;
+  margin-left: 75vw;
+  margin-top: 85vh;
+  border-radius: 30%;
+  cursor: pointer;
+  display: none;
+}
+
+.frame {
+  width: 105%;
+  height: 100%;
+  margin: auto;
+  display: none;
+}
+
+
 
 .name {
     @include flex ($align: flex-start, $justify: flex-start);
@@ -42,8 +88,10 @@ body {
     cursor: pointer;
 }
 
-.active{
+.active_ex{
     background-color: #555;
+    width: 900px;
+    height: 40px;
   }
 .content {
     padding: 0 18px;
@@ -113,6 +161,7 @@ p {
       background-image: url(./images/theyalow.png);
       background-repeat: no-repeat;
       background-size: cover;
+      cursor: pointer;
     }
     .repair {
       background-image: url(./images/repair.png);
@@ -125,6 +174,9 @@ p {
       animation: 0.5s ease-in-out;
       margin: 0;
       padding: 0;
+      font-size: 0px;
+      color: black;
+      //text-shadow: 1px 1px 6px rgba(255,255,255,0.7);
       
       .description {
         margin: 0;
@@ -132,8 +184,7 @@ p {
         width: 100%;
         font-size: 32px;
         border: 2px solid black;
-        display: flex;
-        justify-content: space-between;
+       
       }
     }
     .active,
@@ -209,6 +260,12 @@ p {
 .from-left {
   animation-name: left;
   animation-direction: reverse;
+}
+
+.ifrm {
+  position: absolute;
+  width: 1024px;
+  height: 100%;
 }
 
 @keyframes left {
